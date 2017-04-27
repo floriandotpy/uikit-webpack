@@ -1,13 +1,8 @@
-// jQuery and UIkit core
 import UIkit from 'uikit';
-import $ from 'jquery';
+import Icons from 'uikit/dist/js/uikit-icons';
 
-console.log(UIkit);
+UIkit.use(Icons);
 
-window.UIkit = UIkit;
-
-
-// Some components will hook onto existing markup (e.g. tooltip), others can be called:
 UIkit.notification({
     message: 'Look at this message',
     status: 'primary',
